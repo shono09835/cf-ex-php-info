@@ -11,5 +11,8 @@
         <p>Property Test: <?php print (array_key_exists('test', $_GET) ? $_GET['test'] : 'None') ?> </p>
         <p>Env Test: <?php print (array_key_exists('SOME_VAR', $_ENV) ? $_ENV['SOME_VAR'] : 'None') ?></p>
         <p>Version: <?php print phpversion(); ?></p>
+        <?php
+             sleep ( rand ( 0, 10 ));
+        ?>
     </body>
 </html>
